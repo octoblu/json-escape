@@ -2,16 +2,15 @@ language: go
 go: '1.8'
 branches:
   only:
-    - '/^v[0-9]/'
+  - "/^v[0-9]/"
 install: true
 script: return 0
-before_deploy: ./build.sh
+before_deploy: "./build.sh"
 deploy:
   provider: releases
   skip_cleanup: true
   api_key:
-    secure: >-
-      qXiFdllXM1YWZvl7h3s9MbDAV/0hPQisO6aRn/rAvMcgweaoPD0PfFkb+v3xNkIqd+DuEVIW1c633PAu5sNYYrcfjLNK9BQGfQvfuIJtAa+00y9OP/GUYGn2VQnjNEAJOva6fw8gpvcKIZaGvGj3YAs+MrnxqJxLQcsD+1cb/mxF/JSOmJ712s9u5za0GcdK5HrG7G2FA7lZc5tgwXq+HU/1sJXAWeSEcGBMXKwJp/3tcVmFtniEIvaHpZFoVsT7eJktPB+B03TbA5daDqITQydSMVWQCkJGwF2kQHLxheb70PZXwivKTLtD92+WT4UIz9UOFaefzjJOagea5ut6ASu2w/4TJdcdqX1c6PXXnLVewDIo1d/PQ4iGhtXBrYFI9bqWZvmL6pYTQvwvCeLQUoCno7dHTDcd08dEQIiiySCJNsQNoqVKlgWoOfYCnJ1gP1yuXrZ6NaePD/H55aU29Yx3fhu30Cr4ykmeCZQRitpLAaGXmMTtUuRDtL/fjm5t3eyJ8kjUysZhbpsI9y69jDSJnKoRBxYLwGfg4h8OzyK20hTdLddcSDfHJzT6CIdQxIvyYpTu9iy3yhz/9U2mpDKWwBkplB/P1jPikplRPgY2tX0cGu1Tz66WI0tpBWzjkNpcZ2a90tSVXgaitDUGDXC3+CJvfb2J3JUj28Xlnhg=
+    secure: pi7AuMNEUQN2MCk4ok5mH9PL5U42eL6cBFsqiN2ipcjs2WVPiKyo4EgcNAfjIv13EZ8blNIBxUk+Z8H5sk9GK87z9HWARzdrvclckRIcJ7DHqWr90P0+T38uAbxJUYU0VsDu9pmQzuJBcK8/LgZO46UECqpTSdNZ/MQeYyut6HBDu1FIvCGrmVFj+Vo/safs2eKQu4cFm1IP0xgwzTsQwxHhzQ35GLf22LwVIwBehkt2gLbG8RM1aKi272MzpmeAA14uahn9oP0aD05NmomzdAQxG0tX3n1XfdvKe4INBzM9Yro/LmpYmzPBOtzzKWiQ1feKQaNpP/D6WspUPmqB02v5dGqywt4ksV3n2OqF5LhPeH8H0D+Z31D5JF8+NhvAWkG9a9wvox9Fw1gYxSGsVb7uQHRHc8aAa4N4l/fLQTLdhxmbJZmifLcFz8rly2YLtDrEXIb1WVhOVxklhJNj+7+diyJ0n1s6KQGfFj9utOJbxdWsIQ1MFsGE3iEQDkto471sFu629Pv+f1OL+4XL46FsPhCcu6f/t4VXjhFZv899ckzpF9lIBfPrSSxOK14nA4VCKgxwGJ/eaFj0BOT6CsdndQp9juCX+sU7t3qZOAh9ZK9zhxmJ+c1odL0y0xo6yyFblhAiAitvbRRlBLMk3Q3IPovxAoeeGuKhRnPSwns=
   file:
     - dist/json-escape-darwin-386
     - dist/json-escape-darwin-amd64
