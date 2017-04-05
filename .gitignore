@@ -22,3 +22,8 @@ _testmain.go
 *.exe
 *.test
 *.prof
+json-escape
+entrypoint/json-escape
+go-json-escape
+entrypoint/go-json-escape
+dist

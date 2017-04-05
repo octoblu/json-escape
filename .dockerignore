@@ -1,0 +1,8 @@
+.git
+json-escape
+entrypoint/json-escape
+go-json-escape
+entrypoint/go-json-escape
+build.sh
+cross-compile.sh
+README.md
