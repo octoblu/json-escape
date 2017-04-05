@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APP_NAME=docker-swarm-diff
+APP_NAME=json-escape
 BUILD_DIR=$PWD/dist
 IMAGE_NAME=local/$APP_NAME
 
